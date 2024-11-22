@@ -1,0 +1,60 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Section */
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    min-height: 60px;
+}
+
+/* Buttons Section */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+/* Special Button Styles */
+button:nth-child(4n) { /* Operator buttons */
+    background-color: #ff7a59;
+    color: #fff;
+}
+
+button:nth-child(4n):hover {
+    background-color: #ff5722;
+}
